@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hobby</title>
+    <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="icon">
+            <img src="images/icon2.png" alt="">
+            <span>极客大叔的爱好</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a class="w" href="#">喜欢的电影</a></li>
+                <li><a href="#">喜欢的书</a></li>
+                <li><a href="#">聊一聊</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- movie -->
+    <div class="movie">
+          <h2>喜欢的电影</h2>
+          <p class="line"></p>
+          <ul>
+              <li><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2780591089,3653238658&fm=58&s=CA904C8C6222E3E75E24D99B03002089" alt="">
+                 <p class="names">中国机长</p>
+              </li>
+              <li>
+                  <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3740471263,1502499886&fm=58&s=DE3C04C642A280FA18A2A4AD0300800B" alt="">
+                  <p class="names">我和我的祖国</p>
+              </li>
+              <li>
+                  <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2281488555,1221108053&fm=58&s=0DC5AC449146AD5D48EB4C1E0300A0DE" alt="">
+                  <p class="names">小丑</p>
+              </li>
+              <li>
+                  <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3246509238,1077330305&fm=58&s=DFD513C6886286D432620FBC0300301F" alt="">
+                  <p class="names">哪吒之魔童降世</p>
+              </li>
+          </ul>
+    </div>
+    <div class="movie">
+          <h2>喜欢的书</h2>
+          <p class="line"></p>
+          <ul>
+              <li>
+                  <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1741908216,3352773617&fm=58&s=BAB0B0AE4AF2D5EB16894C3C03007002" alt="">
+                  <p class="names">航海王</p>
+              </li>
+              <li>
+                  <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3862230183,4184312297&fm=58&s=D34440A4608B1AF852C838B60300C080" alt="">
+                  <p class="names">蜘蛛侠</p>
+              </li>
+              <li>
+                  <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1926260292,4161349232&fm=58&s=6E8166854412B7FF8C39B5A603007001" alt="">
+                  <p class="names">罗小黑战记</p>
+              </li>
+              <li>
+                  <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3895436776,1493313546&fm=58&s=C115C730589647FF5E89F0C5030070A1" alt="">
+                  <p class="names">流浪地球</p>
+              </li>
+              
+          </ul>
+    </div>
+    <div class="footer">
+         <p class="yan">王小波说他是一只特立独行的猪，那我就当个一只特立独行的鸟吧。交个朋友<br>么，扫下右边的二维码。</p>
+         <img src="https://ss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=829888290,2650878176&fm=74&app=80&f=JPG&size=f121,121?sec=1880279984&t=274501980523d63a7d93c94f85aabbab" alt="">
+         <p class="end">版权所有@极客大叔</p>
+    </div>
+      <script>
+              var w=document.querySelector('.w');
+              w.addEventListener('mouseover',function(){
+                  this.style.color="blue"
+              })
+              w.addEventListener('mouseout',function(){
+                  this.style.color="white"
+              })
+              w.addEventListener('click',function(){
+                  do{
+                 var p= prompt(" 1.+\n 2.-\n 3.*\n 4./\n 5.exit");
+                 if(p==null){
+                     break;
+                 }
+                 switch (p) {
+                     case "1":
+                               var a=prompt("第一个数");
+                               var b=prompt("第二个数");
+                               var num= parseInt(a)+parseInt(b);
+                               alert(num);
+                         break;
+                     case "2":
+                               var a=prompt("第一个数");
+                               var b=prompt("第二个数");
+                               var num= parseInt(a)-parseInt(b);
+                               alert(num);
+                              
+                         break;
+                     case "3":
+                               var a=prompt("第一个数");
+                               var b=prompt("第二个数");
+                               var num= parseInt(a)*parseInt(b);
+                               alert(num);
+                               
+                         break;
+                     case "4":
+                               var a=prompt("第一个数");
+                               var b=prompt("第二个数");
+                               var num= parseInt(a)/parseInt(b);
+                               alert(num);
+                              
+                         break;
+                     case "5":
+                              
+                         break;
+                     
+                     
+                     
+                     default:
+                          alert("请输入正确的数字")
+                         break;
+                 }
+                }
+                while(p!=="5")
+              })
+
+      </script>
+</body>
+       
+</html>
