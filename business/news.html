@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>猫咪之家</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/news.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+
+</head>
+<style>
+ 
+  .header {
+    width: 100%;
+    height: 80px;
+    background-color: skyblue;
+    line-height: 80px;
+    font-size: 18px;
+    border-radius:20px;
+          margin: 10px 0;
+
+  }
+
+  .header img {
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+
+  .tit {
+    position: relative;
+
+  }
+  .tit span {
+          font-weight: bold;
+        }
+  .nav {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    list-style: none;
+
+  }
+
+  .nav li {
+    float: left;
+    padding-left: 10px;
+    line-height: 40px;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .nav li a:hover {
+    color: blue;
+    background-color: skyblue;
+  }
+
+  .footer {
+    background-color: skyblue;
+    border-radius:20px;
+  }
+
+  .contact {
+    padding-top: 40px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .con {
+    flex: 1;
+    text-align: center;
+  }
+
+  .con img {
+    margin-bottom: 15px;
+  }
+
+  .s {
+    padding-top: 20px;
+  }
+
+  .l img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bq {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid rgb(189, 187, 187);
+    padding: 50px;
+  }
+</style>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="tit w">
+      <img src="images/猫咪.png" alt="">
+      <span>猫咪之家</span>
+      <ul class="nav">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="news.html">新闻</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="content w">
+    <div class="news">
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="" alt="">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <span>sss</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- page -->
+  <div class="page w">
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li>
+          <a href="javascript:;" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="aa"><a href="javascript:;">1</a></li>
+        <li class="aa"><a href="javascript:;">2</a></li>
+        <li class="aa"><a href="javascript:;">3</a></li>
+        <li class="aa"><a href="javascript:;">4</a></li>
+        <li class="aa"><a href="javascript:;">5</a></li>
+        <li>
+          <a href="javascript:;" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- footer-->
+  <div class="footer">
+    <div class="contact">
+      <div class="con s">
+        <img src="images/footer-icon.png" alt="">
+        <p>福州市闽江学院</p>
+      </div>
+      <div class="con s">
+        <img src="images/footer-icon2.png" alt="">
+        <p>442603489@qq.com</p>
+      </div>
+      <div class="con s">
+        <img src="images/footer-icon3.png" alt="">
+        <p>13805021078</p>
+      </div>
+      <div class="con l">
+        <img src="images/ewm.jpg" alt="">
+        <p>扫一扫，加入猫咪之家</p>
+      </div>
+    </div>
+    <p class="bq">
+      版权所有@猫咪之家
+    </p>
+  </div>
+
+  <script>
+     function p(page)
+     {
+
+     
+    axios.get('https://lingqule.papamk.com/wp-json/w2w/v1/products')
+      .then(function (res) {
+        var a = res.data;
+        console.log(a);
+
+        $.each(a, function (i, ele) {
+
+          $('.row .thumbnail').eq(i).find('img').prop('src', ele.images[page-1].src)
+          $('.row .thumbnail').eq(i).find('h3').html(ele.name)
+          $('.row .thumbnail').eq(i).find('p').html(ele.short_description_html)
+          $('.row .thumbnail').eq(i).find('span').html(ele.date_created)
+          $('.row .thumbnail').eq(i).click(function () {
+            window.location.href = "news-detail.html?" + "id=" + ele.id;
+          })
+
+        })
+
+        $('.thumbnail').mouseover(function () {
+          $(this).css('opacity', 0.7);
+          $(this).css('border-color', 'skyblue');
+          $(this).css('cursor', 'pointer');
+
+        })
+        $('.thumbnail').mouseout(function () {
+          $(this).css('opacity', "");
+          $(this).css('border-color', '')
+        })
+
+
+      }).catch(function (res) {
+        console.log('error', res);
+
+      })
+
+
+     }
+     p(1);
+     $('.aa a').each(function(i,ele){
+            $(this).click(function(){
+          $('.row .thumbnail').find('img').prop('src','')
+          $('.row .thumbnail').find('h3').html('')
+          $('.row .thumbnail').find('p').html('')
+          $('.row .thumbnail').find('span').html('')
+                 p($(this).html());
+                 $('body,html').animate({"scrollTop":0})
+            })
+     })
+  </script>
+</body>
+
+</html>

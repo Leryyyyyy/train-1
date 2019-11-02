@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>猫咪之家</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</head>
+<style>
+    .header{
+          width: 100%;
+          height: 80px;
+          background-color: skyblue;
+          line-height: 80px;
+          font-size: 18px;
+          border-radius:20px;
+          margin: 10px 0;              
+    }
+    .header img{
+        vertical-align: middle;padding-right: 10px;
+    }
+   
+    .tit{
+        position: relative;
+        
+    }
+    .tit span {
+          font-weight: bold;
+        }
+   .nav {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      list-style: none;
+      
+    }
+    .nav li{
+        float: left;
+        padding-left: 10px;
+        line-height: 40px;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+    .nav li a:hover{
+        color: blue;
+        background-color: skyblue;
+    }
+    .footer{
+      background-color: skyblue;
+      border-radius:20px;
+          
+    }
+    .contact{
+      padding-top: 40px;
+      width: 80%;
+      display: flex;
+      margin: 0 auto;
+    }
+    .con{
+      flex: 1;
+      text-align: center;
+    }
+    .con img{
+      margin-bottom: 15px;
+    }
+    .s{
+      padding-top: 20px;
+    }
+    .l img{
+         width: 200px;
+         height: 200px;
+    }
+     .bq{
+       width: 50%;
+       margin: 0 auto;
+       text-align: center;
+       border-top: 1px solid rgb(189, 187, 187);
+       padding: 50px;
+     }
+  
+</style>
+<body>
+       <!-- header -->
+         <div class="header">
+             <div class="tit w">
+                 <img src="images/猫咪.png" alt="">
+                 <span>猫咪之家</span>
+                 <ul class="nav">
+                       <li><a href="index.html">首页</a></li>
+                       <li><a href="news.html">新闻</a></li>
+                       <li><a href="about.html">关于我们</a></li>
+                       <li><a href="../dangmu.html">弹幕墙</a></li>
+                 </ul>
+             </div>  
+         </div>
+        <!-- banner  -->
+        <div class="banner">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2208408593,2388905920&fm=26&gp=0.jpg" alt="...">
+                    <div class="carousel-caption">
+                      ...
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3181450891,3005124895&fm=26&gp=0.jpg" alt="...">
+                    <div class="carousel-caption">
+                      ...
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2320704166,1689334269&fm=26&gp=0.jpg" alt="...">
+                    <div class="carousel-caption">
+                      ...
+                    </div>
+                  </div>
+                  ...
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <!-- service -->
+        <div class="service w">
+               <h2>服务范围</h2>
+                  <ul class="aside">
+                    <li id="top"><a  href="javascript:;">顶部</a></li>
+                    <li id="service"><a href="javascript:;">服务范围</a></li>
+                    <li id="tro"><a href="javascript:;">猫咪介绍</a></li>
+                    <li id="action"><a href="javascript:;">猫咪动态</a></li>
+                  </ul>
+               <div class="service-content">
+                  <ul>
+                    <li><img src="images/猫豆.png" alt=""><p>喂食</p></li>
+                    <li><img src="images/合影.png" alt=""><p>合影</p></li>
+                    <li><img src="images/玩耍.png" alt=""><p>玩耍</p></li>
+                    <li><img src="images/领养.png" alt=""><p>领养</p></li>
+                  </ul>
+               </div>
+        </div>
+        <!-- introduction -->
+        <div class="introduction w">
+                 <h2>猫咪介绍</h2>
+                 <div class="tro">
+                   <img src="images/cat1.jpg" alt="">
+                   <div class="txt">
+                        <h3>中华田园猫</h3>
+                        <p>"中华田园猫"是对中国本土家猫类的统称。其中又有狸花猫、橘猫(黄狸)、四川简州猫(四耳猫)、三花猫、白猫、黑猫(玄猫)，黑白花猫、黄猫、山东狮子猫等多个品种，其中以狸花猫和黄狸最常见(灰色狸花猫则较为鲜见)，其中的橘猫体型最易发胖，而纯白长毛异色眼的山东狮子猫尤为稀有和珍贵。</p>
+                        <p>
+                          由于我国历史上并不像重视金鱼那样人工选择定向培养猫品种，因此猫文化不及西方国家那样发达。过去咱们的中国普通猫一直没个学名，近些年来网友根据同样尴尬的中国普通家犬给中国普通家猫命名为“中华田园猫”。经过CFA中国长城猫俱乐部历时六年的不懈努力，"中华田园猫"类中的"中国狸花猫"成为了我国目前唯一被世界认可的中国本土自然品种。
+                        </p>  
+                   </div>
+                 </div>
+
+                 <div class="tro tro2">
+                   <div class="txt">
+                        <h3>布偶猫</h3>
+                         <p>布偶猫，又称“布拉多尔（Ragdoll）”，发源于美国，是一种杂交品种宠物猫。是现存体型最大、体重最重的猫之一。头呈楔形，眼大而圆，被毛丰厚，四肢较长且富有肉感，尾长，身体柔软，毛色有重点色、手套色或双色等等。布偶猫较为温顺好静，对人友善。其美丽优雅又非常类似于狗的性格（Puppy cat）而又被称为"仙女猫"，"小狗猫"。特殊的外貌和温和的性格是布偶猫最大的特点之一。</p>
+                          <p>布偶猫的体毛属于中长型，不会缠结在一起，质地柔滑。它的尾巴蓬松，颈部通常带"围脖"，而臀部的体毛也比较长。</p>
+                   </div>
+                   <img src="images/cat2.jpg" alt="">
+                 </div>
+
+                 <div class="tro">
+                   <div class="txt">
+                        <h3>波斯猫</h3>
+                        <p>波斯猫（Persian cat）是以阿富汗的土种长毛猫和土耳其的安哥拉长毛猫为基础，在英国经过100多年的选种繁殖，于1860年诞生的一个品种。
+                          波斯猫是最常见的长毛猫，波斯猫有一张讨人喜爱的面庞，长而华丽的背毛，优雅的举止，故有“猫中王子”、“王妃”之称，是世界上爱猫者最喜欢的纯种猫之一，占有极其重要的地位。</p>
+                          <p>长毛，圆胖型。中型到大型都有。骨骼粗壮，肌肉发达。四肢短而直
+                            波斯猫
+                            波斯猫
+                            ，脚掌大呈短圆形。尾巴短与身材对称，毛膨松而长，非常高贵有气派。头大而圆，额、鼻、颚都是平平的。鼻子很短，鼻梁宽。眼睛又大又圆，表情丰富。耳小，尖端呈圆形，两耳分隔得很开。</p>
+                   </div>
+                   <img src="images/cat3.jpg" alt="">
+                 </div>     
+        </div>  
+         <!-- action-->
+                   <div class="action w" id="action">
+                         <h2>猫咪动态</h2>
+                         <ul>
+                              <li>
+                                <img src="images/cat-action1.jpg" alt="">
+                                <h4>小猫怎么喂养？<br>猫咪可以喝羊奶粉吗？</h4>
+                        
+                              </li>
+                              <li>
+                                <img src="images/cat-action2.jpg" alt="">
+                                <h4>猫咪舔毛是什么原因？<br>舔毛有哪些好处和害处？</h4>
+                          
+                              </li>
+                              <li>
+                                <img src="images/cat-action3.jpg" alt="">
+                                <h4>猫咪毛发干枯？<br>如何让猫咪毛发更漂亮？</h4>
+                                
+                              </li>
+                              <li>
+                                <img src="images/cat-action4.jpg" alt="">
+                                <h4>猫咪总是容易生病？<br>怎么提高猫咪的免疫力？</h4>
+                                
+                              </li>
+                             
+                         </ul>
+                   </div>
+          <!-- footer-->
+          <div class="footer">
+                 <div class="contact">
+                      <div class="con s">
+                        <img src="images/footer-icon.png" alt="">
+                        <p>福州市闽江学院</p>
+                      </div>
+                      <div class="con s">
+                        <img src="images/footer-icon2.png" alt="">
+                        <p>442603489@qq.com</p>
+                      </div>
+                      <div class="con s">
+                        <img src="images/footer-icon3.png" alt="">
+                        <p>13805021078</p>
+                      </div>
+                      <div class="con l">
+                        <img src="images/ewm.jpg" alt="">
+                        <p>扫一扫，加入猫咪之家</p>
+                      </div>
+                 </div>
+                 <p class="bq">
+                   版权所有@猫咪之家
+                 </p>
+          </div>
+      <script>
+                   $(function(){
+
+                    $(window).scroll(function(e){
+                      
+                            if($(window).scrollTop()>$('.service').offset().top){
+                                    $('.aside').css('display','block');
+                            }
+                            else{
+                                $('.aside').css('display','none');
+                            }
+                                  
+                               })
+
+                        $('#top').click(function(){
+                           
+                          $('body,html').animate({"scrollTop":0},2000)
+                        })       
+                        $('#service').click(function(){
+                           
+                          $('body,html').animate({"scrollTop":$('.service').offset().top},2000)
+                        })       
+                        $('#tro').click(function(){
+                           
+                          $('body,html').animate({"scrollTop":$('.introduction').offset().top},2000)
+                        })       
+                        $('#action').click(function(){
+                           
+                          $('body,html').animate({"scrollTop":$('.action').offset().top},2000)
+                        })       
+                              
+
+
+                   })
+            
+      </script>
+
+</body>
+</html>
